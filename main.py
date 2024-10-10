@@ -14,7 +14,7 @@ sortie = np.array([6, 7, 8, 9, 10]) # Crée un tableau NumPy pour les sorties co
 
 
 model.compile(loss='mean_squared_error', optimizer='adam') # Compile le modèle avec la perte d'erreur quadratique moyenne et l'optimiseur Adam
-model.fit(x=entree, y=sortie, epochs=500) # Entraîne le modèle sur les données d'entrée et de sortie pendant 500 époques
+model.fit(x=entree, y=sortie, epochs=1500) # Entraîne le modèle sur les données d'entrée et de sortie pendant 500 époques
 
 while True: # Boucle infinie pour prédire les valeurs
     x = int(input('Nombre :')) # Prend un nombre en entrée de l'utilisateur
