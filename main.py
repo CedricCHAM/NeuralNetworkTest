@@ -3,11 +3,11 @@ import numpy as np
 
 model = Sequential()
 
-model.add(layers.Dense(units=3, input_shape=[1]))
-
+model.add(Input(shape=(1,)))
+model.add(layers.Dense(units=3))
 model.add(layers.Dense(units=64))
-
 model.add(layers.Dense(units=1))
+
 
 entree = np.array([1, 2, 3, 4, 5])
 sortie = np.array([6, 7, 8, 9, 10])
