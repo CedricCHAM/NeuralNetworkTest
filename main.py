@@ -10,11 +10,11 @@ model.add(layers.Dense(units=1)) # Ajoute une dernière couche dense avec 1 unit
 
 
 entree = np.array([1, 2, 3, 4, 5]) # Crée un tableau NumPy pour les entrées du modèle
-sortie = np.array([6, 7, 8, 9, 10]) # Crée un tableau NumPy pour les sorties correspondantes
+sortie = np.array([2, 4, 6, 8, 10]) # Crée un tableau NumPy pour les sorties correspondantes
 
 
 model.compile(loss='mean_squared_error', optimizer='adam') # Compile le modèle avec la perte d'erreur quadratique moyenne et l'optimiseur Adam
-model.fit(x=entree, y=sortie, epochs=1500) # Entraîne le modèle sur les données d'entrée et de sortie pendant 500 époques
+model.fit(x=entree, y=sortie, epochs=1000) # Entraîne le modèle sur les données d'entrée et de sortie pendant 500 époques
 
 while True: # Boucle infinie pour prédire les valeurs
     x = int(input('Nombre :')) # Prend un nombre en entrée de l'utilisateur
