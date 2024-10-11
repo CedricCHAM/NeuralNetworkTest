@@ -17,11 +17,11 @@ pip install tensorflow
 python test_keras.py
 ```
 
-## Minigrad
+## Pytorch
 
-*Utilisation de la bibliothèque* **Minigrad**
+*Utilisation de la bibliothèque* **Pytorch**
 
-Le scripts necessite l'installation de la bibliothèque **minigrad**
+Le scripts necessite l'installation de la bibliothèque **Pytorch**
 
 ```shell
 pip install torch
