@@ -1,5 +1,7 @@
 # Test reseaux de neurones
 
+## Keras
+
 *Utilisation de la bibliothèque* **Keras**
 
 Le scripts necessite l'installation des bibliothèques **tensorflow** et **keras**
@@ -9,5 +11,24 @@ pip install keras
 pip install tensorflow
 ```
 
-> [source]  
-> video https://www.youtube.com/watch?v=rn1EEd6M7fA&list=PLp3pYrjF9bCmo-eHARnZy96O9KU7bb3PV&index=1
+**Lancement du script**
+
+```bash
+python test_keras.py
+```
+
+## Minigrad
+
+*Utilisation de la bibliothèque* **Minigrad**
+
+Le scripts necessite l'installation de la bibliothèque **minigrad**
+
+```shell
+pip install minigrad
+```
+
+**Lancement du script**
+
+```bash
+python test_minigrad.py
+```
