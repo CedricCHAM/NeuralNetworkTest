@@ -24,11 +24,11 @@ python test_keras.py
 Le scripts necessite l'installation de la bibliothèque **minigrad**
 
 ```shell
-pip install minigrad
+pip install torch
 ```
 
 **Lancement du script**
 
 ```bash
-python test_minigrad.py
+python test_PyTorch.py
 ```
