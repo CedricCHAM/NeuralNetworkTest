@@ -9,8 +9,8 @@ model.add(layers.Dense(units=64)) # Ajoute une autre couche dense avec 64 unité
 model.add(layers.Dense(units=1)) # Ajoute une dernière couche dense avec 1 unité
 
 
-entree = np.array([1, 2, 3, 4, 5]) # Crée un tableau NumPy pour les entrées du modèle
-sortie = np.array([2, 4, 6, 8, 10]) # Crée un tableau NumPy pour les sorties correspondantes
+entree = np.array([1, 2, 3, 4, 5, 6, 7]) # Crée un tableau NumPy pour les entrées du modèle
+sortie = np.array([15, 24, 28, 32, 36, 45, 50]) # Crée un tableau NumPy pour les sorties correspondantes
 
 
 model.compile(loss='mean_squared_error', optimizer='adam') # Compile le modèle avec la perte d'erreur quadratique moyenne et l'optimiseur Adam
@@ -20,7 +20,3 @@ while True: # Boucle infinie pour prédire les valeurs
     x = int(input('Nombre :')) # Prend un nombre en entrée de l'utilisateur
     x_np = np.array([[x]])  # Convertit ce nombre en tableau NumPy 2D
     print('Prediction :' + str(model.predict(x_np))) # Prédit et affiche la sortie du modèle pour cette entrée
-
-
-          
-
